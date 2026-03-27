@@ -102,7 +102,7 @@
     @keyframes riseUp{0%{transform:translateY(0) translateX(0) scale(1);opacity:.7}50%{transform:translateY(-40vh) translateX(12px) scale(1.05);opacity:.5}100%{transform:translateY(-85vh) translateX(-8px) scale(.9);opacity:0}}
     .products-header{text-align:center;margin-bottom:56px;position:relative;z-index:1;}
     .products-header .s-sub{margin:0 auto;}
-    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1;}
+    .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:1;}
     .prod-card{background:white;border:1.5px solid var(--ice-200);border-radius:var(--r-xl);overflow:hidden;transition:.3s;box-shadow:0 4px 20px rgba(14,165,233,.06);}
     .prod-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(14,165,233,.15);border-color:var(--water-400);}
     .prod-img-zone{background:linear-gradient(135deg,var(--ice-100) 0%,var(--ice-200) 100%);height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
@@ -255,7 +255,8 @@
     @media(max-width:900px){
       .hero-grid,.events-inner,.coverage-inner{grid-template-columns:1fr;}
       .hero-right{display:none;}
-      .products-grid,.ice-grid,.test-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto;}
+      .products-grid{grid-template-columns:repeat(2,1fr);}
+      .ice-grid,.test-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto;}
       .steps-row{grid-template-columns:1fr;gap:32px;}
       .steps-row::before{display:none;}
       .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
@@ -524,8 +525,8 @@
   <div class="container">
     <div class="header-inner">
       <a href="#" class="logo">
-        <img src="logo_nobg.png" alt="Santander" style="height:38px;width:auto;">
-        <div class="logo-name">Santander<small>Agua y Soda · La Rioja</small></div>
+        <img src="logo_nobg.png" alt="Santander" style="height:42px;width:auto;max-width:180px;object-fit:contain;">
+        <div class="logo-name"><small>Agua y Soda · La Rioja</small></div>
       </a>
       <nav>
         <a href="#products">Productos</a>
@@ -569,7 +570,7 @@
       </div>
       <div class="hero-right">
         <div class="drop-card">
-          <img src="bidones_nobg.png" alt="Bidones Santander">
+          <img src="bidon20.png" alt="Bidón 20L Santander" style="max-height:220px;object-fit:contain;filter:drop-shadow(0 16px 32px rgba(14,165,233,.25));">
           <span class="drop-label">Más pedido</span>
           <h3>Bidón 20 litros</h3>
           <p>Agua de manantial pura · Sin cargo de envío</p>
@@ -613,14 +614,14 @@
       <div class="prod-card">
         <div class="prod-img-zone">
           <span class="prod-badge">MÁS PEDIDO</span>
-          <img src="bidon20.png" alt="Bidón 20L" style="max-height:170px;object-fit:contain;">
+          <img src="bidon20.png" alt="Bidón 20L" style="max-height:170px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(14,165,233,.2));">
         </div>
         <div class="prod-body">
           <h3>Bidón 20 litros</h3>
-          <p>El clásico familiar. Agua pura de manantial para tu dispenser, ideal para toda la familia.</p>
+          <p>El clásico familiar. Agua pura de manantial para tu dispenser.</p>
           <div class="prod-feats">
-            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Agua de manantial certificada</div>
-            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Envase retornable limpio</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Manantial certificada</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Envase retornable</div>
             <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Todos los dispensers</div>
           </div>
           <a href="#" class="btn-prod" onclick="openPanel('b20');return false;">
@@ -629,34 +630,50 @@
       </div>
       <div class="prod-card">
         <div class="prod-img-zone">
-          <img src="bidon12.png" alt="Bidón 12L" style="max-height:155px;object-fit:contain;">
+          <img src="bidon12.png" alt="Bidón 12L" style="max-height:165px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(14,165,233,.2));">
         </div>
         <div class="prod-body">
           <h3>Bidón 12 litros</h3>
-          <p>Más compacto y fácil de manejar. Perfecto para hogares pequeños, oficinas y negocios.</p>
+          <p>Más compacto y fácil de manejar. Perfecto para hogares pequeños y oficinas.</p>
           <div class="prod-feats">
             <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Liviano y práctico</div>
             <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Misma calidad de agua</div>
             <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ideal para oficinas</div>
           </div>
           <a href="#" class="btn-prod" onclick="openPanel('b12');return false;">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.527 5.85L0 24l6.335-1.65A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.65-.492-5.18-1.355l-.37-.22-3.76.988 1.003-3.664-.24-.38A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>Pedir bidón 12L
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.527 5.85L0 24l6.335-1.65A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.65-.492-5.18-1.355l-.37-.22-3.76.988 1.003-3.664-.24-.38A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>Pedir bidón 12L</a>
         </div>
       </div>
       <div class="prod-card">
-        <div class="prod-img-zone" style="background:linear-gradient(135deg,#DBEAFE,#BFDBFE);">
-          <img src="soda.png" alt="Soda Santander" style="max-height:170px;object-fit:contain;">
+        <div class="prod-img-zone">
+          <img src="soda.png" alt="Soda Santander" style="max-height:170px;object-fit:cover;">
         </div>
         <div class="prod-body">
           <h3>Soda 10 litros</h3>
           <p>Soda natural con gas. La compañera perfecta de cada comida riojana.</p>
           <div class="prod-feats">
-            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Alta carbonatación natural</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Alta carbonatación</div>
             <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sin saborizantes</div>
-            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sifón disponible</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sifón Santander</div>
           </div>
           <a href="#" class="btn-prod" onclick="openPanel('soda');return false;">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.527 5.85L0 24l6.335-1.65A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.65-.492-5.18-1.355l-.37-.22-3.76.988 1.003-3.664-.24-.38A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>Pedir soda 10L</a>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.527 5.85L0 24l6.335-1.65A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.65-.492-5.18-1.355l-.37-.22-3.76.988 1.003-3.664-.24-.38A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>Pedir soda</a>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-zone" style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE);">
+          <img src="hielo.png" alt="Hielo 3kg" style="max-height:175px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(14,165,233,.15));">
+        </div>
+        <div class="prod-body">
+          <h3>Hielo 3 kg</h3>
+          <p>Hielo partido de calidad para tus eventos, asados o para tener siempre fresco.</p>
+          <div class="prod-feats">
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ideal para eventos</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Bolsa sellada y limpia</div>
+            <div class="prod-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Entrega inmediata</div>
+          </div>
+          <a href="#" class="btn-prod" onclick="openPanel('hielo');return false;">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.527 5.85L0 24l6.335-1.65A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.65-.492-5.18-1.355l-.37-.22-3.76.988 1.003-3.664-.24-.38A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>Pedir hielo</a>
         </div>
       </div>
     </div>
@@ -831,7 +848,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="logo_nobg.png" alt="Santander" style="height:36px;width:auto;">
+        <img src="logo_nobg.png" alt="Santander" style="height:40px;width:auto;max-width:160px;object-fit:contain;">
         <p>Agua y soda a domicilio en La Rioja. Más de 25 años acompañando a las familias riojanas con agua pura de manantial.</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/aguasantander/" class="soc" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -966,6 +983,21 @@
         </div>
       </div>
 
+      <div class="prod-row" id="row-hielo">
+        <div class="prod-row-img">
+          <img src="hielo.png" alt="Hielo">
+        </div>
+        <div class="prod-row-info">
+          <strong>Hielo 3 kg</strong>
+          <span class="prod-price">$<span class="unit-price">800</span></span>
+        </div>
+        <div class="qty-ctrl">
+          <button class="qty-btn minus" onclick="changeQty('hielo',-1)">−</button>
+          <span class="qty-num" id="qty-hielo">0</span>
+          <button class="qty-btn plus" onclick="changeQty('hielo',1)">+</button>
+        </div>
+      </div>
+
       <div class="order-total" id="orderTotal">
         <div class="order-total-row">
           <span>Envío</span>
@@ -1075,19 +1107,20 @@
 
 <script>
 // ── STATE ───────────────────────────────────────────────────────────────
-const state = { b20:0, b12:0, soda:0, step:1 };
+const state = { b20:0, b12:0, soda:0, hielo:0, step:1 };
 
 const PRODUCTS = {
   b20:  { label:'Bidón 20L',    unit:'unid.' },
   b12:  { label:'Bidón 12L',    unit:'unid.' },
-  soda: { label:'Soda 10L',     unit:'unid.' },
+  soda:  { label:'Soda 10L',     unit:'unid.' },
+  hielo: { label:'Hielo 3kg',    unit:'bolsa' },
 };
 
 // ── PRECIOS (modificar acá para actualizar) ───────────────────────────────
-const PRICES = { b20: 2500, b12: 1800, soda: 1500 };
+const PRICES = { b20: 2500, b12: 1800, soda: 1500, hielo: 800 };
 
 function calcTotal() {
-  return state.b20 * PRICES.b20 + state.b12 * PRICES.b12 + state.soda * PRICES.soda;
+  return state.b20 * PRICES.b20 + state.b12 * PRICES.b12 + state.soda * PRICES.soda + state.hielo * PRICES.hielo;
 }
 
 function formatMoney(n) {
@@ -1137,7 +1170,7 @@ function renderQty(key) {
 }
 
 function totalItems() {
-  return state.b20 + state.b12 + state.soda;
+  return state.b20 + state.b12 + state.soda + state.hielo;
 }
 
 
@@ -1229,9 +1262,10 @@ function buildPreview() {
   const pay    = document.querySelector('input[name="pay"]:checked');
 
   const prods = [];
-  if (state.b20)  prods.push('• Bidón 20L × ' + state.b20 + '  (' + formatMoney(state.b20 * PRICES.b20) + ')');
-  if (state.b12)  prods.push('• Bidón 12L × ' + state.b12 + '  (' + formatMoney(state.b12 * PRICES.b12) + ')');
-  if (state.soda) prods.push('• Soda 10L × '  + state.soda + '  (' + formatMoney(state.soda * PRICES.soda) + ')');
+  if (state.b20)   prods.push('• Bidón 20L × ' + state.b20   + '  (' + formatMoney(state.b20   * PRICES.b20)   + ')');
+  if (state.b12)   prods.push('• Bidón 12L × ' + state.b12   + '  (' + formatMoney(state.b12   * PRICES.b12)   + ')');
+  if (state.soda)  prods.push('• Soda 10L × '  + state.soda  + '  (' + formatMoney(state.soda  * PRICES.soda)  + ')');
+  if (state.hielo) prods.push('• Hielo 3kg × ' + state.hielo + '  (' + formatMoney(state.hielo * PRICES.hielo) + ')');
 
   const lines = [
     '🛒 Nuevo pedido — Santander',
@@ -1258,9 +1292,10 @@ function sendWhatsApp() {
   const pay    = document.querySelector('input[name="pay"]:checked');
 
   const prods = [];
-  if (state.b20)  prods.push('Bidón 20L × ' + state.b20 + ' = ' + formatMoney(state.b20 * PRICES.b20));
-  if (state.b12)  prods.push('Bidón 12L × ' + state.b12 + ' = ' + formatMoney(state.b12 * PRICES.b12));
-  if (state.soda) prods.push('Soda 10L × '  + state.soda + ' = ' + formatMoney(state.soda * PRICES.soda));
+  if (state.b20)   prods.push('Bidón 20L × ' + state.b20   + ' = ' + formatMoney(state.b20   * PRICES.b20));
+  if (state.b12)   prods.push('Bidón 12L × ' + state.b12   + ' = ' + formatMoney(state.b12   * PRICES.b12));
+  if (state.soda)  prods.push('Soda 10L × '  + state.soda  + ' = ' + formatMoney(state.soda  * PRICES.soda));
+  if (state.hielo) prods.push('Hielo 3kg × ' + state.hielo + ' = ' + formatMoney(state.hielo * PRICES.hielo));
 
   const msg = [
     '🛒 *Nuevo pedido — Santander*',
